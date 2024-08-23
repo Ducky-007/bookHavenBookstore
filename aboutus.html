@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Book Haven Bookstore | Home</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/b48dfbe2f5.js" crssorigin="anonymous"></script>
+    <script src="aboutUs.js" async></script>
+  </head>
+  <body>
+    <div class="header">
+        <img src="Logos/Logo.png" alt="Book Haven Bookstore Logo" width="100px" height="100px">
+        <br>
+        <div id="headingname">Book Haven Bookstore</div>
+        <br>
+        <div id="currentpage">About Us</div>
+        <br>
+      </div>
+    </header>
+    <br>
+    <nav>
+      <div id="fullmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+      <div id="burgermenu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        <ul id="burgermenulinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <main>
+        <div class="container">
+          <h2 id="test">About Us</h2>
+          <img src="Logos/Client3_LogoPalette1_F7B3CC.png"     
+          alt="Pink Book Logos" width="175px" height="175px">
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+        <table id="hours" style="width": 50%>
+          <tr>
+            <th colspan="3">Hours of Operation</th>
+          </tr>
+          <tr>
+            <th>Days</th>
+            <th>Open</th>
+            <th>Close</th>
+          </tr>
+          <tr>
+            <td>Mon-Fri</td>
+            <td>9AM</td>
+            <td>8PM</td>
+          </tr>
+          <tr>
+            <td>Sat</td>
+            <td>10AM</td>
+            <td>6PM</td>
+          </tr>
+          <tr>
+            <td>Sun</td>
+            <td>11AM</td>
+            <td>5PM</td>
+          </tr>
+        </table>
+          <br>
+      </div>
+    <br>
+    <form action="" method="post" id="contactusform">
+      <fieldset>
+        <autocomplete>
+        <legend>Contact Us</legend>
+        <label> First Name:
+          <input type="text" class="required" id="fname" name="fname" placeholder="William" required>
+        </label>
+        <br>
+        <label>Last Name:
+          <input type="text" id="lname" name="lname" placeholder="Shakespeare">
+        </label>
+        <br>
+        <label>Phone:
+          <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+        </label>
+        <br>
+        <label>Email:
+          <input class="required" id="submitemail" type="email" name="email" placeholder="allidoisread@booklover.com" required>
+        </label>
+        <br>
+        <label>
+          Custom Order:
+          <input type="checkbox" id="custom" name="custom" value="custom">
+        </label>
+        <br>
+        <label>Comments/Details:
+          <br>
+          <textarea id="comments" name="comments" class="required" rows="7" cols="30" placeholder="I love your bookstore!" required>
+          </textarea>
+        </label>
+        <br>
+        <label>
+          <input id="reset" type="reset" value="Reset">
+        </label>
+        <br>
+        <div>
+          <button id="formSubmitBtn">Submit</button>
+        </div>
+      </fieldset>
+      <br>
+      </main>
+    </section>
+    <footer>
+      <div class="icons">
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #c7b65e;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" style="color: #c7b65e;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter" style="color: #c7b65e;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube" style="color: #c7b65e;"></i></a></li>
+        </ul>
+      </div>
+      <div>
+      <fieldset id="sign-up">
+        <form action="" method="post" id="newsletter">
+        <legend>Sign up for our newsletter!</legend>
+          <label>Email:
+            <input type="email" name="email" id="email" placeholder="AllIdoisread@bookworm.com" required>
+          </label>
+          <div>
+            <button id="subscribeBtn">Subscribe</button>
+          </div>
+      </fieldset>
+      <ul id="footerlist">
+        <li><a href="aboutus.html" id="aboutusfooter">Contact Us</a></li>
+        <li><a href="community.html" id="communityfooter">Online Book Club</a></li>
+        <li><a href="gallery.html" id="galleryfooter">Our Bestsellers</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

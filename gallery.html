@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Book Haven Bookstore | Home</title>
+    <link href="style.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/b48dfbe2f5.js" crssorigin="anonymous"></script>
+    <script src="gallery.js" async></script>
+  </head>
+  <body>
+    <div class="header">
+        <img src="Logos/Logo.png" alt="Book Haven Bookstore Logo" width="100px" height="100px">
+        <br>
+        <div id="headingname">Book Haven Bookstore</div>
+        <br>
+        <div id="currentpage">Gallery</div>
+        <br>
+      </div>
+    </header>
+    <br>
+    <nav>
+      <div id="fullmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+      <div id="burgermenu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2.0em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        <ul id="burgermenulinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <main>
+       <h2 id="products">Our Products</h2>
+        <button data-modal-target="#modal">View Bookbag</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Your Bookbag</div>
+            <button data-close-button class="close-button" id="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <ul id="bookBagItems"></ul>
+            <button class="emptybookbag" id="emptybookbag">Empty Bookbag</button>
+            <button class="checkout" id="process-order-button">Process Order</button>
+          </div>
+        </div>
+        <div id="overlay"></div>
+        <br>
+        <br>
+        <div class="container">
+          <img id="fantasybook" src="Images/Client3_Book3.png" alt="Sorcerer's Shadowed
+          Chronicles" width="200px" height="200px">
+          <h4>Sorcerer's Shadowed Chronicles</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Sorcerer's Shadowed Chronicles" id="fantBtn" type="button">Add to Bookbag</button>
+          </div>
+          <br>
+          <br>
+          </div>
+        <br>
+        <div class="container" id="brie">
+          <img id="non-fiction" src="Images/Client3_Book1.png" alt="Brie Mine 4Ever"                      width="200px" height="200px">
+          <h4>Brie Mine 4Ever</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Brie Mine 4Ever" id="brieBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="glory">
+          <img src="Images/Client3_Book2.png" alt="Glory Riders"                      width="200px" height="200px">
+          <h4>Glory Riders</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div >
+            <button class="addtobookbag" data-item="Glory Riders" id="gloryBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="pickleball">
+          <img id="magazine" src="Images/Client3_Magazine1.png" alt="Pickleball Magazine"              width="200px" height="200px">
+          <h4>Pickleball Magazine</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Pickleball Magazine" id="pickleballBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="travel">
+          <img id="travel" src="Images/Client3_Magazine2.png" alt="Travel Magazine"              width="200px" height="200px">
+          <h4>Travel Magazine</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Travel Magazine" id="travelBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="eat">
+          <img id="eat" src="Images/Client3_Magazine3.png" alt="Eat Magazine"              width="200px" height="200px">
+          <h4>Eat Magazine</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" id="eatBtn" data-item="Eat Magazine">Add to Bookbag</button>
+          </div>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="notebook">
+          <img src="Images/Client3_Notebook.png" alt="Notebook" width="350px" height="250px">
+          <h4>Notebook</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Notebook" id="notebookBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="stickers">
+          <img src="Images/Client3_Stickers.png" alt="Stickers"              width="200px" height="200px">
+          <h4>Stickers</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Stickers" id="stickersBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        <br>
+        </div>
+        <br>
+        <div class="container" id="toteBag">
+          <img src="Images/Client3_ToteBag.png" alt="Tote Bag"              width="200px" height="200px">
+          <h4>Tote Bag</h4>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Sit dolor porta sodales netus lacinia tincidunt. Aliquet sed nostra leo vivamus suscipit dolor a scelerisque. Maecenas sapien venenatis ornare augue aliquam egestas himenaeos magnis. Ornare ac sem finibus, sit hendrerit a maecenas potenti. Aliquam montes aliquam odio, sodales ridiculus ad rutrum ad duis. Condimentum class molestie pretium tellus sapien porta; iaculis arcu. Laoreet montes orci congue; curae maximus purus lacinia ad. Sociosqu senectus platea augue, ornare orci nec non scelerisque tellus.</p>
+          <div>
+            <button class="addtobookbag" data-item="Tote Bag" id="toteBagBtn">Add to Bookbag</button>
+          </div>
+        <br>
+        <br>
+        </div>
+        <br>
+      </main>
+    </section>
+    <footer>
+      <div class="icons">
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-facebook" style="color: #c7b65e;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram" style="color: #c7b65e;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter" style="color: #c7b65e;"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube" style="color: #c7b65e;"></i></a></li>
+        </ul>
+      </div>
+      <div>
+      <fieldset id="sign-up">
+        <form action="" method="post" id="newsletter">
+        <legend>Sign up for our newsletter!</legend>
+          <label>Email:
+          <input type="email" name="email" id="email" placeholder="AllIdoisread@bookworm.com" required>
+            </label>
+          <div>
+            <button id="subscribeBtn">Subscribe</button>
+          </div>
+      </fieldset>
+      <ul id="footerlist">
+        <li><a href="aboutus.html" id="aboutusfooter">Contact Us</a></li>
+        <li><a href="community.html" id="communityfooter">Online Book Club</a></li>
+        <li><a href="gallery.html" id="galleryfooter">Our Bestsellers</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

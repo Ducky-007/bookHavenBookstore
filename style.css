@@ -1,0 +1,334 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #2e4057;
+}
+
+h3 {
+  color: #ee583f;
+}
+
+h4 {
+  color: #ee583f;
+}
+
+button {
+  color: #ee583f;
+  border: 1px solid #2e4057;
+  background-color: #eef0f3;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: #2e4057;
+}
+
+#subscribeBtn {
+  margin-top: 5px;
+}
+
+#subscribeBtn:hover {
+  background-color: #ee583f;
+  color: #eef0f3;
+}
+
+#reset {
+  margin-bottom: 5px;
+  color: #2e4057;
+  border: 1px solid #2e4057;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+#reset:hover {
+  color: #eef0f3;
+  background-color: #2e4057 ;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: #2e4057;
+  font-weight: lighter;
+}
+
+head, body {
+  text-align: center;
+}
+
+.container {
+  border: 1px solid #2e4057;
+  padding: 35px;
+}
+
+.header {
+  border: 1px solid #ee583f;
+}
+
+#shopbygenre li {
+  list-style: none;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#shopbygenre a {
+  color: #ee583f;
+}
+
+#headingname {
+  color: #2e4057;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#currentpage {
+  color: #ee583f;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#sign-up {
+  text-shadow: 2px 2px 10px #c7b65e;
+}
+
+#fullmenu ul {
+  text-align: center;
+  list-style-type: none;
+  background-color: #2e4057;
+  padding-left: 0px;
+}
+
+#fullmenu ul li {
+  display: inline;
+  text-shadow: 2px 2px 10px #c7b65e;
+  }
+
+#fullmenu ul li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ee583f;
+}
+
+#fullmenu ul li a:hover {
+  background-color: #c7b65e;
+  color: #fff7ee;
+}
+
+footer {
+  background: #2e4057;
+  color: #c7b65e;
+  padding: 5px;
+}
+
+#burgermenulinks li a {
+  color:#ee583f;
+  text-shadow: 2px 2px 10px #c7b65e;
+}
+
+#burgermenulinks li {
+  padding: 5px;
+}
+
+#burgermenulinks li a:hover{
+  background-color: #c7b65e;
+  color: #fff7ee;
+}
+
+#hours {
+  width: 275px;
+  border: 1px solid #2e4057;
+}
+
+#hours th, #hours td {
+  border: 1px solid #2e4057
+}
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+  background-color: #2e4057;
+  padding-left: 0px;
+}
+
+footer ul li {
+  display: inline;
+  text-decoration: none;
+  padding-left: 5px;
+  text-shadow: 2px 2px 10px #c7b65e;
+}
+
+footer ul li a {
+  display: inline-block;
+  padding: 5px;
+  color: #c7b65e;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .875em;
+}
+
+.icons {
+  padding-left: 4px;
+  font-size: 1.345em;
+  letter-spacing: 15px;
+}
+
+body {
+  background: #fff7ee;
+}
+
+#hours {
+  text-align: center;
+  margin: auto;
+}
+
+#fullmenu {
+  display: none;
+}
+
+#burgermenu {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+#burgermenu #burgermenulinks {
+  visibility: none;
+  position: absolute;
+  list-style-type: none;
+  text-align: center;
+  padding: 25px 10px;
+  color: #ee583f;
+  background-color: #2e4057;
+  opacity: 0;
+}
+
+#burgermenu:hover #burgermenulinks {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  margin: 0 auto;
+  left: -61px;
+}
+
+@media all and (min-width: 480px){
+  section {
+    flex-direction: row;
+  }
+  #fullmenu {
+    display: block;
+  }
+  #burgermenu {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 49%;
+    float: left;
+    height: 850px;
+  }
+}
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border: 1px solid #ee583f;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  max-width: 80%;
+  overflow: auto;
+  background-color: #fff7ee;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ee583f;
+  background-color: #2e4057;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 3px solid #ee583f;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.75rem;
+  font-style: bold;
+  color: #ee583f;
+}
+
+.modal-body {
+  padding: 10px 15px;
+  color: #2e4057;
+  background-color: #fff7ee;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#bookBagItems li {
+  margin: 7px 0;
+  color: #2e4057;
+}
+
+.emptybookbag, .checkout {
+  color: #ee583f;
+  border: 1px solid #2e4057;
+  background-color: #eef0f3;
+  font-weight: bolder;
+}
+
+#bookclubBtn {
+  margin-bottom: 10px;
+}
